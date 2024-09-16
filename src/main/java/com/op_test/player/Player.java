@@ -1,8 +1,8 @@
 package com.op_test.player;
 
-import com.op_test.abilities.Abilities;
+import com.op_test.abilities.Ability;
 import com.op_test.abilities.AbilityNames;
-import com.op_test.abilities.AttackAbilities;
+import com.op_test.abilities.AttackAbility;
 import javafx.scene.image.ImageView;
 
 import java.util.ArrayList;
@@ -13,14 +13,14 @@ public class Player {
     private static int id = 0;
     private String name;
     private int bounty;
-    List<Abilities> abilities = new ArrayList<Abilities>();
+    List<Ability> abilities = new ArrayList<Ability>();
 
     public Player(String name, ImageView enemy) {
         id = ++id;
         this.name = name;
 
-        abilities.add(new AttackAbilities(AbilityNames.PUNCH, 2, 2, 0));
-        abilities.add(new AttackAbilities(AbilityNames.GUM_GUM_PISTOL, 10, 2, 2));
+        abilities.add(new AttackAbility(AbilityNames.PUNCH, 2, 2, 0));
+        abilities.add(new AttackAbility(AbilityNames.GUM_GUM_PISTOL, 10, 2, 2));
 
     }
 
@@ -48,7 +48,7 @@ public class Player {
         this.bounty = bounty;
     }
 
-    public Abilities getAbility(int index) {
+    public Ability getAbility(int index) {
         return abilities.get(index);
     }
 }

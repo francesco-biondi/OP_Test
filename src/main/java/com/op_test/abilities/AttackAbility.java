@@ -5,11 +5,11 @@ import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
-public class AttackAbilities extends Abilities {
+public class AttackAbility extends Ability {
 
     protected final int BASE_STRENGTH;
 
-    public AttackAbilities(AbilityNames name, int BASE_STRENGTH, float increment, float coolDownTime) {
+    public AttackAbility(AbilityNames name, int BASE_STRENGTH, float increment, float coolDownTime) {
         type = AbilityTypes.ATTACK;
         this.name = name;
         this.BASE_STRENGTH = BASE_STRENGTH;

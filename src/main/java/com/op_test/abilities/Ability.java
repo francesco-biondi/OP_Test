@@ -1,6 +1,6 @@
 package com.op_test.abilities;
 
-public abstract class Abilities implements I_Abilities {
+public abstract class Ability implements I_Ability {
 
     protected AbilityNames name;
     protected AbilityTypes type;
@@ -9,7 +9,7 @@ public abstract class Abilities implements I_Abilities {
     protected int strength;
     protected float increment;
     protected float coolDownTime;
-    protected static boolean isAnimating = false;
+    protected boolean isAnimating = false;
     protected boolean isAvailable = false;
 
     public AbilityNames getName() {

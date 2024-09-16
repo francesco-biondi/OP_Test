@@ -1,4 +1,4 @@
-package com.op_test.enemy;
+package com.op_test.characters;
 
 import javafx.scene.image.ImageView;
 
