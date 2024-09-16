@@ -1,0 +1,309 @@
+%!Adobe-FontList 1.20
+%Locale:0x80a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampion
+FamilyName:Buddy Champion
+StyleName:Regular
+FullName:Buddy Champion
+MenuName:Buddy Champion
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampion.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:50924
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion
+NameArray:0,Win,1,Buddy Champion
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampion3D
+FamilyName:Buddy Champion 3D
+StyleName:Regular
+FullName:Buddy Champion 3D
+MenuName:Buddy Champion 3D
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampion3d.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:111872
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion 3D
+NameArray:0,Win,1,Buddy Champion 3D
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampion3DItalic
+FamilyName:Buddy Champion 3D Italic
+StyleName:Italic
+FullName:Buddy Champion 3D Italic
+MenuName:Buddy Champion 3D Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampion3dital.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:115024
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion 3D Italic
+NameArray:0,Win,1,Buddy Champion 3D Italic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionBold
+FamilyName:Buddy Champion Bold
+StyleName:Bold
+FullName:Buddy Champion Bold
+MenuName:Buddy Champion Bold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionbold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:56028
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Bold
+NameArray:0,Win,1,Buddy Champion Bold
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionBoldItalic
+FamilyName:Buddy Champion Bold Italic
+StyleName:Bold Italic
+FullName:Buddy Champion Bold Italic
+MenuName:Buddy Champion Bold Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionboldital.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:58452
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Bold Italic
+NameArray:0,Win,1,Buddy Champion Bold Italic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionCondensed
+FamilyName:Buddy Champion Condensed
+StyleName:Condensed
+FullName:Buddy Champion Condensed
+MenuName:Buddy Champion Condensed
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampioncond.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:50600
+FileModTime:1497517636
+WeightClass:400
+WidthClass:3
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Condensed
+NameArray:0,Win,1,Buddy Champion Condensed
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionCondensedItalic
+FamilyName:Buddy Champion Condensed Italic
+StyleName:Condensed Italic
+FullName:Buddy Champion Condensed Italic
+MenuName:Buddy Champion Condensed Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampioncondital.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:52836
+FileModTime:1497517636
+WeightClass:400
+WidthClass:3
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Condensed Italic
+NameArray:0,Win,1,Buddy Champion Condensed Italic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionExpanded
+FamilyName:Buddy Champion Expanded
+StyleName:Expanded
+FullName:Buddy Champion Expanded
+MenuName:Buddy Champion Expanded
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionexpand.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:51612
+FileModTime:1497517636
+WeightClass:400
+WidthClass:7
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Expanded
+NameArray:0,Win,1,Buddy Champion Expanded
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionExpandedItalic
+FamilyName:Buddy Champion Expanded Italic
+StyleName:Expanded Italic
+FullName:Buddy Champion Expanded Italic
+MenuName:Buddy Champion Expanded Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionexpandital.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:53776
+FileModTime:1497517636
+WeightClass:400
+WidthClass:7
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Expanded Italic
+NameArray:0,Win,1,Buddy Champion Expanded Italic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionItalic
+FamilyName:Buddy Champion Italic
+StyleName:Italic
+FullName:Buddy Champion Italic
+MenuName:Buddy Champion Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionital.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:53172
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Italic
+NameArray:0,Win,1,Buddy Champion Italic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionLeftalic
+FamilyName:Buddy Champion Leftalic
+StyleName:Italic
+FullName:Buddy Champion Leftalic
+MenuName:Buddy Champion Leftalic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionleft.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:53220
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Leftalic
+NameArray:0,Win,1,Buddy Champion Leftalic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionRotalic
+FamilyName:Buddy Champion Rotalic
+StyleName:Italic
+FullName:Buddy Champion Rotalic
+MenuName:Buddy Champion Rotalic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionrotal.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:55232
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Rotalic
+NameArray:0,Win,1,Buddy Champion Rotalic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BuddyChampionRotated
+FamilyName:Buddy Champion Rotated
+StyleName:Regular
+FullName:Buddy Champion Rotated
+MenuName:Buddy Champion Rotated
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\Fonts\buddychampionrotate.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:54864
+FileModTime:1497517636
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Buddy Champion Rotated
+NameArray:0,Win,1,Buddy Champion Rotated
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Programacion\Java\OP_Test\src\main\resources\assets\common\Fantasy Wooden GUI  Free\Font\EULA\buddychampion.txt
+FileModTime:1497517636
+%EndFont
+
