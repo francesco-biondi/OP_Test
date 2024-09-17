@@ -6,7 +6,7 @@ public class Enemy {
     public final float maxHealth;
 
     private String name;
-    private float health;
+    private double health;
     private ImageView image;
 
     public Enemy(String name, float maxHealth, ImageView image) {
@@ -24,11 +24,11 @@ public class Enemy {
         this.name = name;
     }
 
-    public float getHealth() {
+    public double getHealth() {
         return health;
     }
 
-    public void setHealth(float health) {
+    public void setHealth(double health) {
         this.health = health;
     }
 
@@ -40,7 +40,7 @@ public class Enemy {
         this.image = image;
     }
 
-    public float dealDamage(float damage) {
+    public double dealDamage(double damage) {
         health -= damage;
         return damage;
     }

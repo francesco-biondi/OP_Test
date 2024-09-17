@@ -1,7 +1,7 @@
 package com.op_test;
 
 import com.op_test.characters.Enemy;
-import com.op_test.player.Player;
+import com.op_test.characters.Player;
 import com.op_test.service.ButtonService;
 import com.op_test.service.CursorService;
 import com.op_test.service.PlayerService;
@@ -26,9 +26,8 @@ public class Controller {
     @FXML
     private StackPane button_1, button_2, button_3, button_4;
 
-    // Mapa de imágenes de los botones presionados y normales
-    private final String normalImagePath = "file:src/main/resources/assets/common/button_normal.png";
-    private final String pressedImagePath = "file:src/main/resources/assets/common/button_pressed.png";
+    private final String normalButtonImagePath = "file:src/main/resources/assets/common/button_normal.png";
+    private final String pressedButtonImagePath = "file:src/main/resources/assets/common/button_pressed.png";
 
 
    private Player player;
@@ -58,13 +57,13 @@ public class Controller {
 
     @FXML
     void button_pressed(MouseEvent event) {
-        ButtonService.onButtonPressed(event, pressedImagePath);
+        ButtonService.onButtonPressed(event, pressedButtonImagePath);
         PlayerService.onAbilityUse(event, player, enemy, health_bar, pistolImage);
     }
 
     @FXML
     void button_released(MouseEvent event) {
-        ButtonService.onButtonReleased(event, normalImagePath);
+        ButtonService.onButtonReleased(event, normalButtonImagePath);
     }
 
 }

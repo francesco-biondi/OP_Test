@@ -9,8 +9,6 @@ module com.op_test {
     opens com.op_test.abilities to javafx.fxml;
     exports com.op_test.characters;
     opens com.op_test.characters to javafx.fxml;
-    exports com.op_test.player;
-    opens com.op_test.player to javafx.fxml;
     exports com.op_test.service;
     opens com.op_test.service to javafx.fxml;
 }

@@ -1,4 +1,4 @@
-package com.op_test.player;
+package com.op_test.characters;
 
 import com.op_test.abilities.Ability;
 import com.op_test.abilities.AbilityNames;
@@ -21,7 +21,8 @@ public class Player {
 
         abilities.add(new AttackAbility(AbilityNames.PUNCH, 2, 2, 0));
         abilities.add(new AttackAbility(AbilityNames.GUM_GUM_PISTOL, 10, 2, 2));
-
+        abilities.add(new AttackAbility(AbilityNames.GEAR_2, 0.2, 0.1, 5));
+        abilities.add(new AttackAbility(AbilityNames.GEAR_3, 0.2, 0.1, 2));
     }
 
     public static int getId() {

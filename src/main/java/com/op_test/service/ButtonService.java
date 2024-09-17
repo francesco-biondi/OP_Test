@@ -9,6 +9,8 @@ import javafx.scene.text.Text;
 
 public class ButtonService {
 
+//    public static void onButtonClick(MouseEvent event, String pressedImagePath, String normalImagePath, Player) {}
+
     public static void onButtonPressed(MouseEvent event, String pressedImagePath) {
         StackPane stackPane = (StackPane) event.getSource();
         ImageView button = (ImageView) stackPane.getChildren().get(0);
@@ -23,6 +25,7 @@ public class ButtonService {
     }
 
     public static void onButtonReleased(MouseEvent event, String normalImagePath) {
+
         StackPane stackPane = (StackPane) event.getSource();
         ImageView button = (ImageView) stackPane.getChildren().get(0);
         button.setImage(new Image(normalImagePath));

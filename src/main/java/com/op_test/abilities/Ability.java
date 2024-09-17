@@ -6,11 +6,11 @@ public abstract class Ability implements I_Ability {
     protected AbilityTypes type;
     protected String description;
     protected int level = 0;
-    protected int strength;
-    protected float increment;
-    protected float coolDownTime;
+    protected double strength;
+    protected double increment;
+    protected int coolDownTime;
     protected boolean isAnimating = false;
-    protected boolean isAvailable = false;
+    protected boolean isAvailable = true;
 
     public AbilityNames getName() {
         return name;
@@ -44,27 +44,27 @@ public abstract class Ability implements I_Ability {
         this.level = level;
     }
 
-    public float getIncrement() {
+    public double getIncrement() {
         return increment;
     }
 
-    public void setIncrement(float increment) {
+    public void setIncrement(double increment) {
         this.increment = increment;
     }
 
-    public int getStrength() {
+    public double getStrength() {
         return strength;
     }
 
-    public void setStrength(int strength) {
+    public void setStrength(double strength) {
         this.strength = strength;
     }
 
-    public float getCoolDownTime() {
+    public int getCoolDownTime() {
         return coolDownTime;
     }
 
-    public void setCoolDownTime(float coolDownTime) {
+    public void setCoolDownTime(int coolDownTime) {
         this.coolDownTime = coolDownTime;
     }
 
@@ -83,4 +83,5 @@ public abstract class Ability implements I_Ability {
     public void setAvailable(boolean available) {
         this.isAvailable = available;
     }
+
 }

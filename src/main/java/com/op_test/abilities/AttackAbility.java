@@ -7,9 +7,9 @@ import javafx.util.Duration;
 
 public class AttackAbility extends Ability {
 
-    protected final int BASE_STRENGTH;
+    private final double BASE_STRENGTH;
 
-    public AttackAbility(AbilityNames name, int BASE_STRENGTH, float increment, float coolDownTime) {
+    public AttackAbility(AbilityNames name, double BASE_STRENGTH, double increment, int coolDownTime) {
         type = AbilityTypes.ATTACK;
         this.name = name;
         this.BASE_STRENGTH = BASE_STRENGTH;
@@ -19,18 +19,18 @@ public class AttackAbility extends Ability {
     }
 
     @Override
-    public float use() {
+    public double use() {
         return strength;
     }
 
     @Override
     public void upgrade() {
         level++;
-        strength += (int) (level * increment);
+        strength += level * increment;
     }
 
     @Override
-    public void animation(ImageView attackImage, ImageView enemy) {
+    public void animation(ImageView enemy, ImageView attackImage) {
 
         if(!isAnimating){
 
@@ -48,8 +48,8 @@ public class AttackAbility extends Ability {
 
             TranslateTransition shake = new TranslateTransition(Duration.millis(30), enemy);
 
-            shake.setByX(BASE_STRENGTH); // Movimiento hacia la derecha
-            shake.setCycleCount(BASE_STRENGTH); // Número de ciclos de movimiento hacia la derecha e izquierda
+            shake.setByX((int)BASE_STRENGTH); // Movimiento hacia la derecha
+            shake.setCycleCount((int)BASE_STRENGTH); // Número de ciclos de movimiento hacia la derecha e izquierda
 
             shake.setAutoReverse(true);
             shake.play();
