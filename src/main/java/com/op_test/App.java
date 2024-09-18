@@ -3,6 +3,7 @@ package com.op_test;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,6 +15,8 @@ public class App extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("One Piece Fighter");
+        Image icon = new Image("file:src/main/resources/assets/icons/opf_icon.png");
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.show();
     }
