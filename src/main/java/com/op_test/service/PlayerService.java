@@ -1,5 +1,8 @@
 package com.op_test.service;
 
+import com.op_test.abilities.Ability;
+import com.op_test.abilities.AttackAbility;
+import com.op_test.abilities.BuffAbility;
 import com.op_test.characters.Enemy;
 import com.op_test.characters.Player;
 import javafx.scene.control.ProgressBar;
@@ -7,55 +10,64 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-
 public class PlayerService {
 
-    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+    private static Ability selectedAbility;
 
-    public static void performAttack(Player player, Enemy enemy, ProgressBar health_bar) {
-        System.out.println(player.getAbility(0).use(enemy));
-        System.out.println(player.getAbility(0).getName());
+    // Realiza un ataque básico con la primera habilidad del jugador
+    public static void performBasicAttack(Player player, Enemy enemy, ProgressBar healthBar) {
+        Ability basicAttack = player.getAbility(0);
 
-        health_bar.setProgress(enemy.getHealth() / enemy.MAX_HEALTH);
-    }
-
-    public static void onAbilityUse(MouseEvent event, Player player, Enemy enemy, ProgressBar health_bar, ImageView abilityImage)
-    {
-        StackPane stackPane = (StackPane) event.getSource();
-
-        switch (stackPane.getId()){
-            case "button_1":
-                if(player.getAbility(1).isAvailable()) {
-                    ability1(player, enemy, health_bar, abilityImage);
-                }
-                break;
-            case "button_2":
-                if(player.getAbility(2).isAvailable()) {
-                    ability2(player, abilityImage);
-                }
-                break;
-            case "button_3":
-
-                break;
-            case "button_4":
-
+        if (basicAttack != null) {
+            applyAbility(basicAttack, player, enemy, healthBar, null);
+        } else {
+            System.out.println("Player does not have an ability assigned.");
         }
     }
 
-    private static void ability1(Player player, Enemy enemy, ProgressBar health_bar, ImageView abilityImage){
+    // Maneja el evento cuando se usa una habilidad en función del botón presionado
+    public static void onAbilityUse(MouseEvent event, Player player, Enemy enemy, ProgressBar healthBar, ImageView abilityImage) {
+        int abilityIndex = getAbilityIndexFromButton((StackPane) event.getSource());
 
-        System.out.println(player.getAbility(1).use(enemy, abilityImage));
-        System.out.println(player.getAbility(1).getName());
+        // Selecciona la habilidad según el botón presionado
+        selectedAbility = player.getAbility(abilityIndex);
+        if (selectedAbility != null) {
+            applyAbility(selectedAbility, player, enemy, healthBar, abilityImage);
 
-        health_bar.setProgress(enemy.getHealth() / enemy.MAX_HEALTH);
+            // Actualiza la interfaz del botón y su estado de cooldown
+            ButtonService.updateButtonState((StackPane) event.getSource(), selectedAbility.getCoolDownTime());
+        } else {
+            System.out.println("No ability found for the selected button.");
+        }
     }
 
-    private static void ability2(Player player, ImageView abilityImage){
-        System.out.println(player.getAbility(2).use(player, abilityImage));
-        System.out.println(player.getAbility(2).getName());
+    // Aplica la habilidad seleccionada al enemigo y actualiza la barra de salud
+    private static void applyAbility(Ability ability, Player player, Enemy enemy, ProgressBar healthBar, ImageView abilityImage) {
+        if (ability instanceof AttackAbility) {
+            System.out.println("Using attack ability: " + ability.getName());
+            double damage = ability.use(enemy, abilityImage);
+            System.out.println("Damage dealt: " + damage);
+
+            // Actualiza la barra de salud del enemigo
+            healthBar.setProgress(enemy.getHealth() / enemy.MAX_HEALTH);
+
+        } else if (ability instanceof BuffAbility) {
+            System.out.println("Using buff ability: " + ability.getName());
+            double buffValue = ability.use(player, abilityImage);
+            System.out.println("Buff applied: " + buffValue);
+
+            // Aquí podrías actualizar alguna barra de estado del jugador si es necesario
+        }
     }
 
-
+    // Devuelve el índice de la habilidad según el botón que fue presionado
+    private static int getAbilityIndexFromButton(StackPane stackPane) {
+        return switch (stackPane.getId()) {
+            case "button_1" -> 1;
+            case "button_2" -> 2;
+            case "button_3" -> 3;
+            case "button_4" -> 4;
+            default -> throw new IllegalStateException("Unexpected button ID: " + stackPane.getId());
+        };
+    }
 }

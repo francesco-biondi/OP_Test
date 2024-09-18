@@ -1,5 +1,9 @@
 package com.op_test.abilities;
 
+import com.op_test.service.SchedulerService;
+
+import java.util.concurrent.TimeUnit;
+
 public abstract class Ability implements I_Ability {
 
     protected AbilityNames name;
@@ -11,6 +15,15 @@ public abstract class Ability implements I_Ability {
     protected int coolDownTime;
     protected boolean isAnimating = false;
     protected boolean isAvailable = true;
+
+    public void cooldown(){
+        isAvailable = false;
+
+        SchedulerService.getScheduler().schedule(() -> {
+            isAvailable = true;
+        },  coolDownTime, TimeUnit.SECONDS);
+
+    }
 
     public AbilityNames getName() {
         return name;

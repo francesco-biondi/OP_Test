@@ -52,21 +52,21 @@
             </ImageView>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="720.0" spacing="20.0">
                <children>
-                  <StackPane fx:id="button_1" accessibleRole="BUTTON" onMousePressed="#button_pressed" onMouseReleased="#button_released" prefHeight="0.0" prefWidth="145.0">
+                  <StackPane fx:id="button_1" accessibleRole="BUTTON" onMouseClicked="#button_pressed" prefHeight="0.0" prefWidth="145.0">
                      <children>
                         <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../assets/common/button_normal.png" />
                            </image>
                         </ImageView>
-                        <Text fill="WHITE" mouseTransparent="true" onMousePressed="#button_pressed" onMouseReleased="#button_released" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Pistol" textAlignment="CENTER" wrappingWidth="136.86399841308594">
+                        <Text fill="WHITE" mouseTransparent="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Pistol" textAlignment="CENTER" wrappingWidth="136.86399841308594">
                            <font>
                               <Font name="Unispace-Bold" size="16.0" />
                            </font>
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="button_2" layoutX="298.0" layoutY="10.0" onMousePressed="#button_pressed" onMouseReleased="#button_released" prefHeight="0.0" prefWidth="145.0">
+                  <StackPane fx:id="button_2" layoutX="298.0" layoutY="10.0" onMouseClicked="#button_pressed" prefHeight="0.0" prefWidth="145.0">
                      <children>
                         <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -80,7 +80,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="button_3" layoutX="370.0" layoutY="10.0" onMousePressed="#button_pressed" onMouseReleased="#button_released" prefHeight="0.0" prefWidth="145.0">
+                  <StackPane fx:id="button_3" layoutX="370.0" layoutY="10.0" onMouseClicked="#button_pressed" prefHeight="0.0" prefWidth="145.0">
                      <children>
                         <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -94,7 +94,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="button_4" layoutX="443.0" layoutY="10.0" onMousePressed="#button_pressed" onMouseReleased="#button_released" prefHeight="0.0" prefWidth="145.0">
+                  <StackPane fx:id="button_4" layoutX="443.0" layoutY="10.0" onMouseClicked="#button_pressed" prefHeight="0.0" prefWidth="145.0">
                      <children>
                         <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                            <image>

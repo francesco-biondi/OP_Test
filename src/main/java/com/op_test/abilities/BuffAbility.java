@@ -2,10 +2,9 @@ package com.op_test.abilities;
 
 import com.op_test.characters.Player;
 import com.op_test.characters.Target;
+import com.op_test.service.SchedulerService;
 import javafx.scene.image.ImageView;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class BuffAbility extends Ability{
@@ -14,7 +13,6 @@ public class BuffAbility extends Ability{
     private final int duration;
     private Ability buffedAbility;
     double buffedStrength;
-    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
     public BuffAbility(AbilityNames name, double BASE_STRENGTH, double increment, int coolDownTime, int duration) {
         type = AbilityTypes.BUFF;
@@ -24,14 +22,6 @@ public class BuffAbility extends Ability{
         this.increment = increment;
         this.coolDownTime = coolDownTime;
         this.duration = duration;
-    }
-
-    public void cooldown(){
-        isAvailable = false;
-
-        scheduler.schedule(() -> {
-            isAvailable = true;
-        },  coolDownTime, TimeUnit.SECONDS);
     }
 
     @Override
@@ -49,9 +39,11 @@ public class BuffAbility extends Ability{
             buffedAbility = player.getAbility(0);
             if (buffedAbility != null) {
                 applyBuff(buffedAbility);
-                scheduler.schedule(() -> {
+
+                SchedulerService.getScheduler().schedule(() -> {
                     removeBuff(buffedAbility);
                 },  duration, TimeUnit.SECONDS);
+
                 cooldown();
                 return strength;
             } else {
