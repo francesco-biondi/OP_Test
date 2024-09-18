@@ -24,7 +24,7 @@ public class Controller {
     @FXML
     public void initialize() {
         this.player = new Player("Fran");
-        this.enemy = new Enemy("Rob Lucci", 100, enemyImage);
+        this.enemy = new Enemy("Rob Lucci", 100, 15, enemyImage);
     }
 
     @FXML

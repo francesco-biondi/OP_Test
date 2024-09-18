@@ -125,15 +125,39 @@
             </HBox>
          </children>
       </StackPane>
-      <ImageView fitHeight="70.0" fitWidth="188.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
-         <image>
-            <Image url="@../../assets/common/UI%20board%20Medium%20%20parchment.png" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="113.0" fitWidth="100.0" layoutX="1180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
          <image>
             <Image url="@../../assets/common/UI%20board%20Medium%20%20parchment.png" />
          </image>
       </ImageView>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="188.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../assets/common/UI%20board%20Medium%20%20parchment.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/berry.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffda47" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.5" text="000">
+                     <font>
+                        <Font name="Unispace-Bold" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </StackPane>
    </children>
 </AnchorPane>
