@@ -31,13 +31,17 @@ public class AttackAbility extends Ability {
     }
 
     public double useAbility(Target target, ImageView attackImage) {
-        if(target instanceof Enemy enemy){
-            enemy.setHealth(enemy.getHealth() - strength);
-            if(attackImage != null) animation(enemy.getImage(), attackImage);
-            cooldown();
-            return strength;
+        if (isAvailable) {
+            if (target instanceof Enemy enemy) {
+                enemy.setHealth(enemy.getHealth() - strength);
+                animation(enemy.getImage(), attackImage);
+                cooldown();
+                return strength;
+            } else {
+                throw new IllegalStateException("Target must be an instance of Enemy");
+            }
         } else {
-            throw new IllegalStateException("Target must be an instance of Enemy");
+            throw new IllegalStateException("Ability is not available");
         }
     }
 
@@ -50,11 +54,11 @@ public class AttackAbility extends Ability {
     @Override
     public void animation(ImageView enemy, ImageView attackImage) {
 
-        if(!isAnimating){
+        if (!isAnimating) {
 
             isAnimating = true;
 
-            if(attackImage != null){
+            if (attackImage != null) {
                 attackImage.setVisible(true);
             }
 
@@ -66,15 +70,15 @@ public class AttackAbility extends Ability {
 
             TranslateTransition shake = new TranslateTransition(Duration.millis(30), enemy);
 
-            shake.setByX((int)BASE_STRENGTH); // Movimiento hacia la derecha
-            shake.setCycleCount((int)BASE_STRENGTH); // Número de ciclos de movimiento hacia la derecha e izquierda
+            shake.setByX((int) BASE_STRENGTH); // Movimiento hacia la derecha
+            shake.setCycleCount((int) BASE_STRENGTH); // Número de ciclos de movimiento hacia la derecha e izquierda
 
             shake.setAutoReverse(true);
             shake.play();
 
             shake.setOnFinished(e -> {
                 enemy.setEffect(null);
-                if(attackImage != null){
+                if (attackImage != null) {
                     attackImage.setVisible(false);
                 }
                 isAnimating = false;

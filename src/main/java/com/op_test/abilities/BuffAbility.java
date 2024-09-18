@@ -7,7 +7,7 @@ import javafx.scene.image.ImageView;
 
 import java.util.concurrent.TimeUnit;
 
-public class BuffAbility extends Ability{
+public class BuffAbility extends Ability {
 
     private final double BASE_STRENGTH;
     private final int duration;
@@ -35,22 +35,26 @@ public class BuffAbility extends Ability{
     }
 
     private double useAbility(Target target) {
-        if (target instanceof Player player) {
-            buffedAbility = player.getAbility(0);
-            if (buffedAbility != null) {
-                applyBuff(buffedAbility);
+        if (isAvailable) {
+            if (target instanceof Player player) {
+                buffedAbility = player.getAbility(0);
+                if (buffedAbility != null) {
+                    applyBuff(buffedAbility);
 
-                SchedulerService.getScheduler().schedule(() -> {
-                    removeBuff(buffedAbility);
-                },  duration, TimeUnit.SECONDS);
+                    SchedulerService.getScheduler().schedule(() -> {
+                        removeBuff(buffedAbility);
+                    }, duration, TimeUnit.SECONDS);
 
-                cooldown();
-                return strength;
+                    cooldown();
+                    return strength;
+                } else {
+                    throw new IllegalStateException("Player's ability is null");
+                }
             } else {
-                throw new IllegalStateException("Player's ability is null");
+                throw new IllegalArgumentException("Target must be an instance of Player");
             }
         } else {
-            throw new IllegalArgumentException("Target must be an instance of Player");
+            throw new IllegalStateException("Ability is not available");
         }
     }
 
