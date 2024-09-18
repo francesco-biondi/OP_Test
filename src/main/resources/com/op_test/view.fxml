@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
@@ -59,10 +60,13 @@
                               <Image url="@../../assets/common/button_normal.png" />
                            </image>
                         </ImageView>
-                        <Text fill="WHITE" mouseTransparent="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Pistol" textAlignment="CENTER" wrappingWidth="136.86399841308594">
+                        <Text boundsType="VISUAL" fill="WHITE" mouseTransparent="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Pistol" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="136.86399841308594">
                            <font>
                               <Font name="Unispace-Bold" size="16.0" />
                            </font>
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
                         </Text>
                      </children>
                   </StackPane>
@@ -73,10 +77,13 @@
                               <Image url="@../../assets/common/button_normal.png" />
                            </image>
                         </ImageView>
-                        <Text disable="true" fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Rocket" textAlignment="CENTER" wrappingWidth="136.86399841308594">
+                        <Text boundsType="VISUAL" disable="true" fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gear 2" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="136.86399841308594">
                            <font>
                               <Font name="Unispace-Bold" size="16.0" />
                            </font>
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
                         </Text>
                      </children>
                   </StackPane>
@@ -87,10 +94,13 @@
                               <Image url="@../../assets/common/button_normal.png" />
                            </image>
                         </ImageView>
-                        <Text disable="true" fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Bazooka" textAlignment="CENTER">
+                        <Text boundsType="VISUAL" disable="true" fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Bazooka" textAlignment="CENTER" textOrigin="CENTER">
                            <font>
                               <Font name="Unispace-Bold" size="16.0" />
                            </font>
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
                         </Text>
                      </children>
                   </StackPane>
@@ -101,10 +111,13 @@
                               <Image url="@../../assets/common/button_normal.png" />
                            </image>
                         </ImageView>
-                        <Text disable="true" fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Gatling" textAlignment="CENTER" wrappingWidth="146.63999938964844">
+                        <Text boundsType="VISUAL" disable="true" fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.8" text="Gum-Gum Gatling" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="146.63999938964844">
                            <font>
                               <Font name="Unispace-Bold" size="16.0" />
                            </font>
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
                         </Text>
                      </children>
                   </StackPane>
