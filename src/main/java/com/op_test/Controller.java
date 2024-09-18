@@ -30,12 +30,12 @@ public class Controller {
     private final String pressedButtonImagePath = "file:src/main/resources/assets/common/button_pressed.png";
 
 
-   private Player player;
-   private Enemy enemy;
+    private Player player;
+    private Enemy enemy;
 
     @FXML
     public void initialize() {
-        this.player = new Player("Fran", enemyImage);
+        this.player = new Player("Fran");
         this.enemy = new Enemy("Rob Lucci", 100, enemyImage);
     }
 
@@ -43,7 +43,6 @@ public class Controller {
     void attack(MouseEvent event) {
         PlayerService.performAttack(player, enemy, health_bar);
     }
-
 
     @FXML
     void fist_cursor(MouseEvent event) {

@@ -2,26 +2,18 @@ package com.op_test.characters;
 
 import javafx.scene.image.ImageView;
 
-public class Enemy {
-    public final float maxHealth;
+public class Enemy extends Target {
+    private static int idCount = 0;
+    public final float MAX_HEALTH;
 
-    private String name;
     private double health;
     private ImageView image;
 
-    public Enemy(String name, float maxHealth, ImageView image) {
-        this.name = name;
-        this.maxHealth = maxHealth;
-        health = maxHealth;
+    public Enemy(String name, float MAX_HEALTH, ImageView image) {
+        super(++idCount, name);
+        this.MAX_HEALTH = MAX_HEALTH;
+        this.health = MAX_HEALTH;
         this.image = image;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getHealth() {
@@ -38,11 +30,6 @@ public class Enemy {
 
     public void setImage(ImageView image) {
         this.image = image;
-    }
-
-    public double dealDamage(double damage) {
-        health -= damage;
-        return damage;
     }
 
 
